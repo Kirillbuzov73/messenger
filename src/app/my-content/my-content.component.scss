@@ -1,0 +1,19 @@
+.content {
+    display: flex;
+    height: 80%;
+    max-height: 80%;
+    max-width: 100%;
+    .leftContent {
+        background-color: var(--main-grey);
+        width: 20%;
+        max-width: 20%;
+        order: 0;
+        overflow-y: auto;
+    }
+    .rightContent {
+        background-color: var(--main-white);
+        width: 80%;
+        max-width: 80%;
+        order: 1;
+    }
+}
