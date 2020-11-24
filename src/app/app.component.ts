@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'messenger';
+  handleClick(event: Event) {
+    console.log("root", event);
+  }
+  handleSmth(event: Event) {
+    console.log("root", event);
+  }
 }

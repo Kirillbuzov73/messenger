@@ -10,8 +10,8 @@ export class GroupBoxComponent implements OnInit {
   _user: User;
   @Input() set user(user: User) {
     this._user = user;
-    console.log(user)
-    console.log(user.date instanceof Date)
+    // console.log(user)
+    // console.log(user.date instanceof Date)
   }
 
   get user() {
