@@ -1,14 +1,146 @@
 [
     {
-        "name": "Kira",
-        "text": "Hello",
-        "date": "Sun Nov 22 2020 13:38:56 GMT+0300",
-        "pic": null
+        "id": "1",
+        "pictureUrl": "https://i.pinimg.com/originals/23/f1/04/23f104571baadff503d0686bda74f443.jpg",
+        "pictureAlt": "wolf",
+        "userName": "Kira",
+        "lastMessage": {
+            "messageAuthor": "Author",
+            "messageText": "Privet",
+            "messageDate": "Date",
+            "readStatus": "assets/images/check.svg"
+        }
     },
     {
-        "name": "Stas",
-        "text": "Hi",
-        "date": "Sun Nov 22 2020 12:38:56 GMT+0300",
-        "pic": null
+        "id": "2",
+        "pictureUrl": "https://klike.net/uploads/posts/2020-03/1585642492_2.jpg",
+        "pictureAlt": "jerry",
+        "userName": "Stas",
+        "lastMessage": {
+            "messageAuthor": "Author",
+            "messageText": "Hello",
+            "messageDate": "Date",
+            "readStatus": "assets/images/check.svg"
+        }
+    },
+    {
+        "id": "3",
+        "pictureUrl": "https://www.ya-roditel.ru/upload/iblock/17a/17a1e07a3ef281f2b8bb3d5614cff72a.jpg",
+        "pictureAlt": "leopold",
+        "userName": "Max",
+        "lastMessage": {
+            "messageAuthor": "MAuthor",
+            "messageText": "Hi!",
+            "messageDate": "Date",
+            "readStatus": "assets/images/check.svg"
+        }
+    },
+    {
+        "id": "4",
+        "pictureUrl": "https://www.1zoom.ru/prev/26/25959.jpg",
+        "pictureAlt": "bear",
+        "userName": "Igor",
+        "lastMessage": {
+            "messageAuthor": "Author",
+            "messageText": "Hellooo!",
+            "messageDate": "Date",
+            "readStatus": "assets/images/check.svg"
+        }
+    },
+    {
+        "id": "5",
+        "pictureUrl": "https://2.bp.blogspot.com/-w-XrZs3K0XQ/XFqh4XtIhRI/AAAAAAAAWS8/fKCaQJL38LsqVxYZcj05_Iz_mUkJI08PgCLcBGAs/s1600/maxresdefault.jpg",
+        "pictureAlt": "pig",
+        "userName": "Valera",
+        "lastMessage": {
+            "messageAuthor": "Author",
+            "messageText": "Horosho!",
+            "messageDate": "Date",
+            "readStatus": "assets/images/check.svg"
+        }
+    },
+    {
+        "id": "6",
+        "pictureUrl": "https://cdn.lifehacker.ru/wp-content/uploads/2020/03/shrek-2001-goblin-3_1584628287-e1584628316981.jpg",
+        "pictureAlt": "shrek",
+        "userName": "Ivan",
+        "lastMessage": {
+            "messageAuthor": "Author",
+            "messageText": "My name is Vanya!",
+            "messageDate": "Date",
+            "readStatus": "assets/images/checked.svg"
+        }
+    },
+    {
+        "id": "7",
+        "pictureUrl": "https://mult.tv/images/novatory.webp",
+        "pictureAlt": "userPhoto",
+        "userName": "Lisa",
+        "lastMessage": {
+            "messageAuthor": "Author",
+            "messageText": "Hello people!",
+            "messageDate": "Date",
+            "readStatus": "assets/images/checked.svg"
+        }
+    },
+    {
+        "id": "8",
+        "pictureUrl": "https://autogear.ru/misc/i/gallery/29531/751691.jpg",
+        "pictureAlt": "mickey",
+        "userName": "Magamed",
+        "lastMessage": {
+            "messageAuthor": "Author",
+            "messageText": "Hello",
+            "messageDate": "Date",
+            "readStatus": "assets/images/checked.svg"
+        }
+    },
+    {
+        "id": "9",
+        "pictureUrl": "https://st.depositphotos.com/2196544/3506/i/600/depositphotos_35062105-stock-photo-happy-cute-cartoon-girl-jumping.jpg",
+        "pictureAlt": "userPhoto",
+        "userName": "Sveta",
+        "lastMessage": {
+            "messageAuthor": "Author",
+            "messageText": "Nety sveta",
+            "messageDate": "Date",
+            "readStatus": "assets/images/checked.svg"
+        }
+    },
+    {
+        "id": "10",
+        "pictureUrl": "https://i.pinimg.com/originals/08/7a/59/087a5944d37373f62af0cb272195f63f.jpg",
+        "pictureAlt": "rick",
+        "userName": "Rick",
+        "lastMessage": {
+            "messageAuthor": "Author",
+            "messageText": "Labadaba",
+            "messageDate": "Date",
+            "readStatus": "assets/images/checked.svg"
+        }
+    },
+    {
+        "id": "11",
+        "pictureUrl": "https://upload.wikimedia.org/wikipedia/en/d/dc/Pocket_Mortys.png",
+        "pictureAlt": "morty",
+        "userName": "Morty",
+        "lastMessage": {
+            "messageAuthor": "Author",
+            "messageText": "Hey",
+            "messageDate": "Date",
+            "readStatus": "assets/images/checked.svg"
+        }
+    },
+    {
+        "id": "12",
+        "pictureUrl": "https://i.ytimg.com/vi/xvaO2jEUhkk/maxresdefault.jpg",
+        "pictureAlt": "userPhoto",
+        "userName": "Olga",
+        "lastMessage": {
+            "messageAuthor": "Author",
+            "messageText": "I Olga",
+            "messageDate": "Date",
+            "readStatus": "assets/images/checked.svg"
+        }
     }
 ]

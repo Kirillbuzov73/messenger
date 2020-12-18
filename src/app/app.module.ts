@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { GroupBoxComponent } from './body/group-box/group-box.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainContentComponent } from './body/main-content/main-content.component';
+import { UsersService } from './users.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { MainContentComponent } from './body/main-content/main-content.component
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

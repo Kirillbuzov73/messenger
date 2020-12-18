@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { User, UserService } from 'src/app/user.service';
+import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/users.interfaces';
+import { UsersService } from 'src/app/users.service';
 
 @Component({
   selector: 'app-group-box',
@@ -7,23 +8,15 @@ import { User, UserService } from 'src/app/user.service';
   styleUrls: ['./group-box.component.scss']
 })
 export class GroupBoxComponent implements OnInit {
-  _user: User;
-  @Input() set user(user: User) {
-    this._user = user;
-    // console.log(user)
-    // console.log(user.date instanceof Date)
-  }
+  usersData: User[];
 
-  get user() {
-    return this._user;
-  }
-
-  constructor() {
-    this._user = this.user;
-  }
+  constructor(private usersService: UsersService) { }
 
   ngOnInit(): void {
-
+    this.usersService.getUsers().subscribe((response: User[]) => {
+      this.usersData = response;
+      console.log('UUUUUUUU ', this.usersData);
+    })
   }
 
 }

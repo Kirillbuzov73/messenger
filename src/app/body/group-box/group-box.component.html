@@ -1,15 +1,17 @@
-<div class="groupBox">
+<div class="groupBox" *ngFor="let user of usersData">
     <div class="groupBoxImg">
-        <img src="../../../assets/images/listok.jpg" alt="listok">
+        <img src={{user.pictureUrl}} alt={{user.pictureAlt}}>
     </div>
-    <div *ngIf="user" class="groupBoxInfo">
-        <div class="titleGroupBox">
-            <div>{{user.name}}</div>
-            <div>{{user.text}}</div>
+    <div class="groupBoxInfo">
+        <div class="topGroupBOx">
+            <div class="titleGroupBox">
+                <div>{{user.userName}}</div>
+            </div>
+            <div class="statusGroupBox">
+                <div><img src="{{user.lastMessage.readStatus}}" alt="check"></div>
+                <div>{{user.lastMessage.messageDate}}</div>
+            </div>
         </div>
-        <div class="statusGroupBox">
-            <div>{{user.date}}</div>
-            <div>{{user.pic}}</div>
-        </div>
+        <div class="bottomGroupBox">{{user.lastMessage.messageAuthor}}: {{user.lastMessage.messageText}}</div>
     </div>
 </div>
