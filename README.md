@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 README!!!
 
+Switch to '/feat/getUsers' branch.
 Use 'npm intall' in the directory "/messenger" and `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. Than go directory "/serverApp", use 'npm install' and 'npm run start-server' to start server.
 
 ## Code scaffolding
