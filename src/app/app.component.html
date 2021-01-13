@@ -1,3 +1,5 @@
-<app-header></app-header>
-<app-body></app-body>
-<app-footer></app-footer>
+<div class="app" [ngClass]="isDarkTheme ? 'dark-theme' : ''">
+    <app-left-panel [ngClass]="isMinimize ? 'minimize' : ''" [ngStyle]="{'width': coordinateX + 'px'}"></app-left-panel>
+    <div (drag)="dragEvent($event)" class="resizer"></div>
+    <app-right-panel></app-right-panel>
+</div>

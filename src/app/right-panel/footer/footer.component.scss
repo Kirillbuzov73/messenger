@@ -1,0 +1,55 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--main-interface);
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    
+    div {
+        display: flex;
+        padding: 5px;
+
+        a img {
+            height: 22px;
+            width: 22px;
+            margin: 5px;
+        }
+    } 
+
+    .clip {
+        order: 0;
+    }
+
+    .textarea {
+        order: 1;
+        flex-grow: 1;
+    }
+
+    textarea {
+        width: 100%;
+        align-self: center;
+        background-color: var(--main-interface);
+        color: var(--main-white);
+        resize: none;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        overflow: auto;
+        height: 20px;
+    }
+    
+    textarea::-webkit-input-placeholder {
+        color: var(--main-dark-grey);
+        line-height: 20px;
+    }
+
+    .smile {
+        order: 2;
+    }
+    
+    .microphone {
+        order: 3;
+    }
+}
