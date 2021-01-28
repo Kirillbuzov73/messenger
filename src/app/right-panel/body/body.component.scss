@@ -1,0 +1,14 @@
+.bodyComp {
+    background-color: var(--main-interface);
+    color: var(--main-white);
+    width: 290px;
+    height: 28px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        text-align: center;
+    }
+}

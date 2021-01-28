@@ -1,0 +1,7 @@
+<!-- <button (click)="postData()">CLICK</button> -->
+<ng-container *ngIf="usersData && usersData.length; else noUsersMessage">
+    <app-user-card *ngFor="let user of usersData" [user]="user"></app-user-card>
+</ng-container>
+<ng-template #noUsersMessage>
+    <div>No users found</div>
+</ng-template>
