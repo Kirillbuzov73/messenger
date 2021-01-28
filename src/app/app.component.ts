@@ -9,23 +9,20 @@ import { ThemeService } from './theme.service';
 export class AppComponent implements OnInit {
   isDarkTheme: boolean;
   coordinateX: string;
-  isMinimize: boolean = false;
+  minimize: any;
 
-  constructor(private themeService: ThemeService) { }
+  constructor(private themeService: ThemeService) {
+  }
 
   ngOnInit(): void {
     this.themeService.isDarkTheme$.subscribe((isDark: boolean) => {
       this.isDarkTheme = isDark;
     });
+    this.minimize = this.themeService.minimize;
   }
 
-  dragEvent(event: MouseEvent) {
-    if (event.clientX % 5 === 0 && event.clientX > 50) {
-      this.coordinateX = event.clientX.toString();
-      this.isMinimize = false;
-      this.themeService.coordinateX = this.coordinateX;
-    } else if (event.clientX && event.clientX <= 50) {
-      this.isMinimize = true;
-    }
+  handleDragEvent(event: MouseEvent) {
+    this.themeService.handleDragEvent(event);
+    this.coordinateX = this.themeService.coordinateX;
   }
 }

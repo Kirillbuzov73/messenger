@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ThemeService } from 'src/app/theme.service';
 import { User } from 'src/app/users.interfaces';
 
 @Component({
@@ -8,9 +9,11 @@ import { User } from 'src/app/users.interfaces';
 })
 export class UserCardComponent implements OnInit {
   @Input() user: User;
+  minimize: any;
 
-  constructor() { }
+  constructor(private themeService: ThemeService) { }
 
   ngOnInit(): void {
+    this.minimize = this.themeService.minimize;
   }
 }

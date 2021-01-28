@@ -1,15 +1,16 @@
 footer {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     background-color: var(--main-interface);
     height: 50px;
     min-height: 50px;
-    max-height: 50px;
+    // max-height: 50px;
     
     div {
         display: flex;
-        padding: 5px;
+        margin: 5px 0;
+        padding: 0 5px;
 
         a img {
             height: 22px;
@@ -22,25 +23,24 @@ footer {
         order: 0;
     }
 
-    .textarea {
+    #textarea {
+        padding: 0;
         order: 1;
         flex-grow: 1;
-    }
-
-    textarea {
+        overflow-y: auto;
+        overflow-x: hidden;
         width: 100%;
         align-self: center;
         background-color: var(--main-interface);
         color: var(--main-white);
-        resize: none;
         font-size: 15px;
         border: none;
         outline: none;
-        overflow: auto;
-        height: 20px;
+        overflow-wrap: anywhere;
+        max-height: 300px;
     }
-    
-    textarea::-webkit-input-placeholder {
+
+    #textarea::-webkit-input-placeholder {
         color: var(--main-dark-grey);
         line-height: 20px;
     }
@@ -49,6 +49,12 @@ footer {
         order: 2;
     }
     
+    // button {
+    //     order: 3;
+    //     height: 50px;
+    //     width: 50px;
+    // }
+
     .microphone {
         order: 3;
     }

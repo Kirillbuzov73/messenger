@@ -1,11 +1,11 @@
-<footer>
+<footer [ngStyle]="{'height': footerHeight + 'px'}">
     <div class="clip">
         <a href="">
             <img src="../../assets/images/attachment.svg" alt="clip">
         </a>
     </div>
-    <div class="textarea">
-        <textarea cols="30" rows="2" placeholder="&nbsp;Написать сообщение..."></textarea>
+    <div (input)="changeEvent($event)" (keyup)="clearEvent($event)" (keydown)="handleKeyDown($event)" id="textarea"
+        contenteditable="true" aria-multiline="true" role="textbox">
     </div>
     <div class="smile">
         <a href="">
@@ -17,4 +17,5 @@
             <img src="../../assets/images/mic.svg" alt="microphone">
         </a>
     </div>
+    <!-- <button type="submit" (click)="sendMessageEvent()"></button> -->
 </footer>

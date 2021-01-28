@@ -10,3 +10,14 @@ export interface User {
         readStatus: string;
     }
 }
+
+export interface Message {
+    userId: string;
+    messages: [
+        {
+            messageId: string;
+            message: string;
+            messageDate: Date;
+        }
+    ]
+}

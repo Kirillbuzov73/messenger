@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, ObservableInput, of } from 'rxjs';
-import { User } from './users.interfaces';
+import { Message, User } from './users.interfaces';
 import { catchError, map } from 'rxjs/operators';
 
 @Injectable({
@@ -39,5 +39,10 @@ export class UsersService {
 
   postData(user: User): Observable<any> {
     return this.http.post('http://localhost:3000/api/postusers', user);
+  }
+
+  postMessage(message: Message): Observable<any> {
+    console.log('message ', message);
+    return this.http.post('http://localhost:3000/api/postmessage', message);
   }
 }
