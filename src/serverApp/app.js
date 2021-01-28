@@ -4,16 +4,6 @@ const fs = require("fs");
 
 const app = express();
 app.use(cors());
-// создаем парсер для данных в формате json
-const jsonParser = express.json();
-
-// app.post("/postusers", jsonParser, function (request, response) {
-//     response.setHeader('Access-Control-Allow-Origin', '*');
-//     console.log("Body", request.body);
-//     if (!request.body) return response.sendStatus(400);
-
-//     response.json(request.body); // отправляем пришедший ответ обратно
-// });
 
 app.post("/api/postusers", express.json({ type: '*/*' }), function (req, res) {
     const newUser = req.body;
@@ -82,15 +72,6 @@ app.post("/api/postmessage", express.json({ type: '*/*' }), function (req, res) 
         return res.status(500).send({ error: 'Invalid data' });
     }
 });
-
-app.get("/", function (request, response) {
-    response.sendFile(__dirname + "/index.html");
-});
-
-const corsOptions = {
-    origin: "http://localhost:4200",
-    optionsSuccessStatus: 200
-}
 
 app.get("/api/users", function (req, res) {
     readUsers().then(

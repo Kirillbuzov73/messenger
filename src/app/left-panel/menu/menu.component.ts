@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ThemeService } from 'src/app/theme.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,12 +6,10 @@ import { ThemeService } from 'src/app/theme.service';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  minimize: any;
 
-  constructor(private themeService: ThemeService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.minimize = this.themeService.minimize;
   }
 
 }

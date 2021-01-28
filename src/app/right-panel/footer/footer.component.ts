@@ -22,7 +22,6 @@ export class FooterComponent implements OnInit {
 
   changeEvent(event: any) {
     this.changeEventObject = event;
-    console.log("changeEvent ", event);
     this.messageText = event.target.textContent;
     if (event.target.offsetHeight > 40) {
       this.footerHeight = event.target.offsetHeight + 10;
@@ -33,7 +32,8 @@ export class FooterComponent implements OnInit {
     }
   }
 
-  blurEvent() {
+  resize(event: any) {
+    console.log('EVENT', event);
     if (this.changeEventObject.target.offsetHeight > 40) {
       this.footerHeight = this.changeEventObject.target.offsetHeight + 10;
     } else {
@@ -42,7 +42,6 @@ export class FooterComponent implements OnInit {
   }
 
   clearEvent(event: any) {
-    // console.log('clear ', event);
     if (event.keyCode === 16) {
       this.isShiftPressed = false;
     }
@@ -52,7 +51,6 @@ export class FooterComponent implements OnInit {
   }
 
   handleKeyDown(event: any) {
-    // console.log('keydown ', event);
     if (event.keyCode === 16) {
       this.isShiftPressed = true;
     }
@@ -69,7 +67,6 @@ export class FooterComponent implements OnInit {
         }
       ]
     }
-    // console.log('Submit -> ', message);
     this.changeEventObject.target.textContent = null;
     this.usersService.postMessage(message).subscribe((data: Message) => {
       console.log('SOMEDATA from server: ', data);

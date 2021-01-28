@@ -4,8 +4,8 @@
             <img src="../../assets/images/attachment.svg" alt="clip">
         </a>
     </div>
-    <div (input)="changeEvent($event)" (keyup)="clearEvent($event)" (keydown)="handleKeyDown($event)" id="textarea"
-        contenteditable="true" aria-multiline="true" role="textbox">
+    <div (resize)="resize($event)" (input)="changeEvent($event)" (keyup)="clearEvent($event)"
+        (keydown)="handleKeyDown($event)" id="textarea" contenteditable="true" aria-multiline="true" role="textbox">
     </div>
     <div class="smile">
         <a href="">

@@ -23,12 +23,6 @@ body {
     --main-click-backlight: #2b5278;
     --main-backlight: #202b36;
 
-    //          My old Colors
-    // --main-white: rgb(255, 255, 255);
-    // --main-grey: rgb(212, 209, 209);
-    // --main-interface: rgba(0, 0, 0, 0.89);
-    // --main-backlight: lightblue;
-
     &.dark-theme {
         --main-white: rgba(0, 0, 0, 0.89);
         --main-grey: rgb(99, 99, 99);
@@ -37,18 +31,15 @@ body {
     }
 }
 
-/* SCROLL */
 ::-webkit-scrollbar {
     width: 3.5px;
     height: 5px;
     background-color: var(--main-interface);
 }
 
-/* scroll block */
 ::-webkit-scrollbar-thumb {
     background-color: var(--main-grey);
     border-radius: 9em;
-    // box-shadow: inset 1px 1px 10px var(--main-grey);
 }
 
 ::-webkit-scrollbar-thumb:hover {
