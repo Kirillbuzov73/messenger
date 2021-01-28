@@ -1,0 +1,23 @@
+.right-panel-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-left: 1px solid var(--main-chat);
+
+    app-header {
+        order: 0;
+    }
+
+    app-body {
+        order: 1;
+        display: flex;
+        background-color: var(--main-chat);
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    app-footer {
+        order: 2;
+    }
+}

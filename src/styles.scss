@@ -1,23 +1,56 @@
 body {
-    --main-white: rgb(244, 244, 244);
-    --main-grey: rgba(35, 51, 21, 0.678);
-    --main-qivi: yellowgreen;
     margin: 0;
     height: 100vh;
     width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: system-ui;
 }
+
+.app {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+    //  Telegram Colors
+    --main-white: #f5f5f5;
+    --main-grey: #7f91a4;
+    --main-dark-grey: #4f5b67;
+    --main-blue: #73b9f5;
+    --main-chat: #0e1621;
+    --main-search: #242f3d;
+    --main-interface: #17212b;
+    --main-click-backlight: #2b5278;
+    --main-backlight: #202b36;
+
+    //          My old Colors
+    // --main-white: rgb(255, 255, 255);
+    // --main-grey: rgb(212, 209, 209);
+    // --main-interface: rgba(0, 0, 0, 0.89);
+    // --main-backlight: lightblue;
+
+    &.dark-theme {
+        --main-white: rgba(0, 0, 0, 0.89);
+        --main-grey: rgb(99, 99, 99);
+        --main-interface: rgba(255, 255, 255);
+        --main-backlight: lightblue;
+    }
+}
+
 /* SCROLL */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 3.5px;
     height: 5px;
-    background-color: var(--main-qivi);
+    background-color: var(--main-interface);
 }
+
 /* scroll block */
 ::-webkit-scrollbar-thumb {
     background-color: var(--main-grey);
     border-radius: 9em;
-    // box-shadow: inset 1px 1px 10px var(--main-qivi);
+    // box-shadow: inset 1px 1px 10px var(--main-grey);
 }
+
 ::-webkit-scrollbar-thumb:hover {
-    // background-color: var(--main-qivi);
+    background-color: var(--main-blue);
 }

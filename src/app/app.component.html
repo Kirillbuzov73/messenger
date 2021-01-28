@@ -1,3 +1,6 @@
-<app-header></app-header>
-<app-body (click)="handleClick($event)" (onSomething)="handleSmth($event)"></app-body>
-<app-footer></app-footer>
+<div class="app" [ngClass]="isDarkTheme ? 'dark-theme' : ''">
+    <app-left-panel [ngStyle]="{'width': coordinateX + 'px'}">
+    </app-left-panel>
+    <div (drag)="handleDragEvent($event)" class="resizer"></div>
+    <app-right-panel [ngStyle]="{'width': coordinateX + 'px'}"></app-right-panel>
+</div>

@@ -1,0 +1,23 @@
+<div class="userCard">
+    <div class="userImg">
+        <img src={{user.pictureUrl}} alt={{user.pictureAlt}}>
+    </div>
+    <div class="titleAndText" [ngClass]="minimize.isMinimizeStatus ? 'minimize' : ''">
+        <div class="title">
+            <div class="userName">
+                <div>{{user.userName}}</div>
+            </div>
+        </div>
+        <div class="text">
+            <div>{{user.lastMessage.messageAuthor}}:&nbsp;</div>
+            <div>{{user.lastMessage.messageText}}</div>
+        </div>
+    </div>
+    <div class="statusBox" [ngClass]="minimize.isMinimizeStatus ? 'minimize' : ''">
+        <div>
+            <div><img src="{{user.lastMessage.readStatus}}" alt="check"></div>
+            <div>{{user.lastMessage.messageDate}}</div>
+        </div>
+        <div>clip</div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+.app {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-interface);
+    height: 100%;
+    width: 100%;
+
+    app-left-panel {
+        display: flex;
+        background-color: var(--main-interface);
+        order: 0;
+        min-width: 256px;
+        // width: 256px;
+        max-width: 70%;
+    }
+
+    // .minimize {
+    //     display: none;
+    // }
+
+    .resizer {
+        order: 1;
+        background-color: var(--main-interface);
+        width: 4px;
+        cursor: ew-resize;
+        -webkit-user-drag: element;
+    }
+
+    app-right-panel {
+        order: 2;
+        flex-grow: 1;
+    }
+}
